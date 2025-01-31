@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome cdn -->
+    <script src="https://kit.fontawesome.com/302eee30f5.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#179800',
+                        secoundry: '#EFEBE3',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+            content-visibility: auto;
+            }
+            
+            .accent{
+                color: #179800;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Sora', serif;">
+    <header class="bg-gradient-to-t from-[#EFEBE3]">
+        <nav class="navbar mt-3 container mx-auto  ">
+            <!-- logo  -->
+            <div class="navbar-start">
+                <img src="./assets/logo-header.png" alt="logo-header">
+            </div>
+
+            <!-- text -->
+            <div class="navbar-center hidden lg:block">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-xl">Product</a></li>
+                    <li><a class="text-xl">Services</a></li>
+                    <li><a class="text-xl">Contact us</a></li>
+                </ul>
+            </div>
+
+            <!-- button  -->
+            <div class="navbar-end">
+                <div class="dropdown md:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost accent lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 -ml-48 w-52 p-2 shadow">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="hidden md:block">
+                    <div class="flex gap-4">
+                        <div class="flex items-center gap-5">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <button class="btn btn-outline accent border-accent hover:bg-accent text-xl ">Login</button>
+                        <button
+                            class="btn text-white bg-accent text-xl hover:bg-transparent hover:accent ">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <hr class="border-accent md:hidden">
+
+        <!-- hero -->
+        <section class="container mx-auto text-center space-y-4 md:space-y-8 mt-12 lg:mt-20">
+            <h1
+                class="max-w-[341px] lg:max-w-[827px] mx-auto text-black font-semibold text-3xl md:text-4xl lg:text-5xl">
+                Freshness <span class="accent">You Can Count</span> On, Prices You’ll Love!</h1>
+            <p class="max-w-[349px] lg:max-w-[800px] mx-auto text-black text-base md:text-xl">Shop your daily essentials
+                at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            <div class="lg:max-w-[1031px] mx-auto"><img class="w-full" src="./assets/hero-vegetables.png"
+                    alt="vegetables"></div>
+        </section>
+    </header>
+    <main>
+        <section class="mt-12 container mx-auto">
+            <h1 class="font-semibold text-2xl text-accent mb-8">Services</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="card bg-secoundry shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <div class="bg-white p-6 rounded-full">
+                            <img src="./assets/service.png"
+                            alt="service" />
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">24/7 Services </h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
