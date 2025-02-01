@@ -1,0 +1,46 @@
+@keyframes anni {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translatex(15px);
+    }
+
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes anni2 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translatex(-15px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.element {
+    animation: anni 2s ease-in-out infinite;
+}
+.element2 {
+    animation: anni2 2s ease-in-out infinite;
+}

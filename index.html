@@ -18,8 +18,15 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- css cdn  -->
+
+    <link rel="stylesheet" href="style.css">
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/302eee30f5.js" crossorigin="anonymous"></script>
+
+    <!-- annimation cdn  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
         tailwind.config = {
@@ -46,6 +53,7 @@
             .poppins{
                 font-family: "Poppins", serif;
             }
+            
         }
     </style>
 </head>
@@ -103,13 +111,14 @@
         <hr class="border-accent md:hidden">
 
         <!-- hero -->
-        <section class="container mx-auto text-center space-y-4 md:space-y-8 mt-12 lg:mt-20">
-            <h1 class="max-w-[341px] lg:max-w-[827px] mx-auto text-black font-semibold text-3xl md:text-4xl lg:text-5xl">
+        <section class="container mx-auto text-center space-y-4 md:space-y-8 mt-12 lg:mt-20 ">
+            <h1
+                class="max-w-[341px] lg:max-w-[827px] mx-auto text-black font-semibold text-3xl md:text-4xl lg:text-5xl element">
                 Freshness <span class="accent">You Can Count</span> On, Prices You’ll Love!</h1>
-            <p class="max-w-[349px] lg:max-w-[800px] mx-auto text-black text-base md:text-xl">
+            <p class="max-w-[349px] lg:max-w-[800px] mx-auto text-black text-base md:text-xl element2">
                 Shop your daily essentials
                 at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-            <div class="lg:max-w-[1031px] mx-auto"><img class="w-full" src="./assets/hero-vegetables.png"
+            <div class="lg:max-w-[1031px] mx-auto"><img class="w-full " src="./assets/hero-vegetables.png"
                     alt="vegetables"></div>
         </section>
     </header>
@@ -310,13 +319,16 @@
 
                 <div class="w-1/2">
                     <div class="join join-vertical w-full space-y-10">
-                    
+
                         <div class="collapse collapse-arrow join-item border-base-300 border">
                             <input type="radio" name="my-accordion-4" checked="checked" />
                             <div class="collapse-title text-2xl font-medium">How can I track or modify my order?
                             </div>
                             <div class="collapse-content text-xl">
-                                <p>Once your order has been shipped a tracking link will be generated which will be sent to you via email and whatsapp. You can use this link to track your order. For modifications, you can contact us via whatsapp or email for upto 3 days from the day you place the order.</p>
+                                <p>Once your order has been shipped a tracking link will be generated which will be sent
+                                    to you via email and whatsapp. You can use this link to track your order. For
+                                    modifications, you can contact us via whatsapp or email for upto 3 days from the day
+                                    you place the order.</p>
                             </div>
                         </div>
 
@@ -325,13 +337,18 @@
                             <div class="collapse-title text-2xl font-medium">Why should I buy from The Plated Project?
                             </div>
                             <div class="collapse-content text-xl">
-                                <p>All our dinnerware is carefully designed in collaboration with global artists with an artistic concept running through each collection & each piece comes with a thoughtfully crafted story card that surrounds a social issue. With every piece you buy you will also sponsor at least 10 meals for the hungry fighting the global hunger crisis with art.</p>
+                                <p>All our dinnerware is carefully designed in collaboration with global artists with an
+                                    artistic concept running through each collection & each piece comes with a
+                                    thoughtfully crafted story card that surrounds a social issue. With every piece you
+                                    buy you will also sponsor at least 10 meals for the hungry fighting the global
+                                    hunger crisis with art.</p>
                             </div>
                         </div>
 
                         <div class="collapse collapse-arrow join-item border-base-300 border">
                             <input type="radio" name="my-accordion-4" checked="checked" />
-                            <div class="collapse-title text-2xl font-medium">How long will it take for an international orders to reach me?
+                            <div class="collapse-title text-2xl font-medium">How long will it take for an international
+                                orders to reach me?
                             </div>
                             <div class="collapse-content text-xl">
                                 <p>We generally deliver international orders within 12-15 business days.</p>
@@ -364,7 +381,7 @@
 
                 <!-- card right  -->
                 <div class="flex justify-between items-center md:w-5/12 bg-[#115414] rounded-xl mx-4 md:mx-0">
-                    <div class="space-y-4 lg:space-y-8 pl-5">
+                    <div class="space-y-2 lg:space-y-4 pl-5">
                         <div><img src="./assets/india-gate-logo.png" alt="dawat-logo" class="w-16 lg:w-[98px]"></div>
                         <button
                             class="poppins font-normal text-xs lg:text-2xl bg-[#63B76D]  text-white rounded-xl py-2 lg:py-4 px-4 lg:px-6 ">World’s
@@ -399,7 +416,7 @@
                     <input type="email" placeholder="Enter email...." class="input w-3/4 text-lg"><br>
 
                     <button
-                        class="btn bg-accent text-white text-sm lg:text-xl mt-3 lg:mt-9 mb-10 md:mb-0 ">Subscribe</button>
+                        class="btn bg-accent text-white text-sm lg:text-xl mt-3 lg:mt-9 mb-10 md:mb-0 hover:bg-transparent hover:text-accent hover:border-accent">Subscribe</button>
                 </div>
             </div>
         </section>
